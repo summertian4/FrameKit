@@ -1,0 +1,8 @@
+language: objective-c
+
+xcode_project: Demo/FrameKitDemo.xcodeproj
+xcode_scheme: FrameKitDemo
+osx_image: xcode8.3
+
+script:
+- xcodebuild clean build test -project Demo/FrameKitDemo.xcodeproj -scheme FrameKitDemo -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.3.1'
