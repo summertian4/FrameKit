@@ -14,6 +14,7 @@
 		8212A8771F4591C900DF3EDC /* FrameKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8212A8761F4591C900DF3EDC /* FrameKitDemoUITests.swift */; };
 		8212A8881F45920F00DF3EDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8212A8851F45920F00DF3EDC /* AppDelegate.swift */; };
 		8212A8891F45921000DF3EDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8212A8871F45920F00DF3EDC /* ViewController.swift */; };
+		8212A88C1F4592BF00DF3EDC /* UIView+Chains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8212A88B1F4592BF00DF3EDC /* UIView+Chains.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,8 @@
 		8212A8761F4591C900DF3EDC /* FrameKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameKitDemoUITests.swift; sourceTree = "<group>"; };
 		8212A8781F4591C900DF3EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8212A8851F45920F00DF3EDC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8212A8871F45920F00DF3EDC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController/ViewController.swift; sourceTree = "<group>"; };
+		8212A8871F45920F00DF3EDC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8212A88B1F4592BF00DF3EDC /* UIView+Chains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Chains.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		8212A8551F4591C900DF3EDC /* FrameKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8212A88A1F4592BF00DF3EDC /* FrameKit */,
 				8212A8841F45920F00DF3EDC /* App */,
 				8212A8861F45920F00DF3EDC /* ViewController */,
 				8212A85F1F4591C900DF3EDC /* LaunchScreen.storyboard */,
@@ -127,7 +130,6 @@
 			children = (
 				8212A8851F45920F00DF3EDC /* AppDelegate.swift */,
 				8212A85A1F4591C900DF3EDC /* Main.storyboard */,
-				8212A8871F45920F00DF3EDC /* ViewController.swift */,
 				8212A85D1F4591C900DF3EDC /* Assets.xcassets */,
 				8212A8621F4591C900DF3EDC /* Info.plist */,
 			);
@@ -137,8 +139,18 @@
 		8212A8861F45920F00DF3EDC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8212A8871F45920F00DF3EDC /* ViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8212A88A1F4592BF00DF3EDC /* FrameKit */ = {
+			isa = PBXGroup;
+			children = (
+				8212A88B1F4592BF00DF3EDC /* UIView+Chains.swift */,
+			);
+			name = FrameKit;
+			path = ../../FrameKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +292,7 @@
 			files = (
 				8212A8891F45921000DF3EDC /* ViewController.swift in Sources */,
 				8212A8881F45920F00DF3EDC /* AppDelegate.swift in Sources */,
+				8212A88C1F4592BF00DF3EDC /* UIView+Chains.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
