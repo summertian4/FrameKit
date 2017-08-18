@@ -5,35 +5,35 @@
 ![](FrameKit.png)
 
 
-# Introduction
+# 简介 
 
-> [中文简介](README_ZH.md)
+> [English Introduction](README.md)
 
-**A UIView frame tool that uses chain calls**。
+**FrameKit 是一个链式调用的 UIView frame 工具**。
 
-Uncomfortable code：
+你是不是很厌倦这样的写法：
 
 ```swift
 self.view.frame.origin = CGPoint(x: 100.0, y: self.view.frame.origin.y)
 ```
 
-In addition, different library extensions to the frame will lead to some naming conflicts.
+同时，不同的库对 frame 的扩展又会导致一些命名冲突。
 
-If you use FrameKit, your frame settings will become:：
+如果使用 FrameKit，你的 frame 设置将会变成：
 
 ```swift
 self.view.lpd.x = 100.0
 ```
 
-You can use it directly for your project, or as a dependent library for your personal library.
+你可以直接引入你的项目中，或者作为你个人库的依赖库，**FrameKit 将会很好的帮你减少代码量和命名冲突**，希望你喜欢 FrameKit。
 
-# Install
+# 安装
 
 ```
 pod 'FrameKit'
 ```
 
-# Example
+# 示例调用
 
 ```swift
 let _ = self.view.fkit.x
@@ -49,7 +49,7 @@ let _ = self.view.fkit.centerX
 self.view.fkit.centerX = 100.0
 ```
 
-# All API
+# 全部接口
 
 ```swift
 extension UIView {
@@ -85,7 +85,8 @@ public var right: CGFloat
 
 FrameKit 使用 [MIT License](LICENSE)
 
-# Feedback
+# 反馈
 
-If there are any suggestions, pleas send an email to <coderfish@163.com>, and also welcome to my [blog](http://zhoulingyu.com) to discuss. Learning together~
+如果有什么修改建议，可以发送邮件到 <coderfish@163.com>，也欢迎到我的[博客](http://zhoulingyu.com)一起讨论学习哟~
+
 
