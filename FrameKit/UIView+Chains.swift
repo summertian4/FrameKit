@@ -52,7 +52,7 @@ public class UIViewExtension {
             return view.fkit_height
         }
         set {
-            view.fkit_height = height
+            view.fkit_height = newValue
         }
     }
     public var size: CGSize {
